@@ -3,13 +3,11 @@
 #c'est le code de TP1
 
 
-def word_count(): # creer la fonction de word count
-    sentence = str(input('entrer une phrase pour savoir le nombre de mots: ')) # permettre que l'utilisateur entre son phrase
+# creer la fonction de word count qui compte le nombre de mots, input est une phrase
+# donner le nombre de mots(output)
+def word_count(variable):
 
-    numberWords = len(sentence.split(" ")) # separer les espaces pour compter le nombre de mots
+    words = (len(variable.split(" ")))
 
-    return numberWords # effectuer la fonction
+    return words
 
-reply = f'la phrase contient {word_count()} mots.' # creer la phrase pour montrer le nombre de mots
-
-print(reply) # imprimer la phrase
